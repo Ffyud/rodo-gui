@@ -6,7 +6,7 @@ function App() {
       <header><h1>🔥 RoDo 🔥</h1><h5>Wie is de sjaak?</h5></header>
       <main>
         Ja man
-        Hoi
+        Hallo
       </main>
     </div>
   );
