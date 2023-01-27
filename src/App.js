@@ -1,15 +1,19 @@
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Main from "./Main";
+import Vragenlijst from "./Vragenlijst";
 
 function App() {
-  return (
-    <div className="App">
-      <header><h1>🔥 RoDo 🔥</h1><h5>Wie is de sjaak?</h5></header>
-      <main>
-        Ja man
-        Hallo
-      </main>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/">
+                    <Route index element={<Main />} />
+                    <Route path="vragenlijst" element={<Vragenlijst />} />
+                </Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
