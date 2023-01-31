@@ -2,6 +2,8 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Main from "./Main";
 import Vragenlijst from "./Vragenlijst";
+import React from "react";
+import Questionnaire from "./Vragenlijst_aanmaken";
 
 function App() {
     return (
@@ -12,6 +14,7 @@ function App() {
                     <Route path="vragenlijst" element={<Vragenlijst />} />
                 </Route>
             </Routes>
+            <Questionnaire />
         </div>
     );
 }
