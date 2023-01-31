@@ -9,6 +9,7 @@ function Vragenlijst() {
             <main>
                 <VragenlijstVraag vraag="Wie ben jij?"></VragenlijstVraag>
                 <VragenlijstVraag vraag="Hoeveel bier heb je op?"></VragenlijstVraag>
+                <VragenlijstVraag vraag="Gaat neet?"></VragenlijstVraag>
             </main>
         </div>
     );
