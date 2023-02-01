@@ -12,9 +12,10 @@ function App() {
                 <Route path="/">
                     <Route index element={<Main />} />
                     <Route path="vragenlijst" element={<Vragenlijst />} />
+                    <Route path="vragenlijst_aanmaken" element={<Questionnaire />} />
                 </Route>
             </Routes>
-            <Questionnaire />
+
         </div>
     );
 }

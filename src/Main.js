@@ -11,6 +11,8 @@ function Main() {
                     <br/><br/> Kijk, een route: <br/><br/></div>
                 <div>
                     <Link to={"vragenlijst"}>Open vragenlijst</Link>
+                    <br/><br/>
+                    <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
                 </div>
             </main>
         </div>
