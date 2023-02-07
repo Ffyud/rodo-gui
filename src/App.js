@@ -4,6 +4,7 @@ import Main from "./Main";
 import Vragenlijst from "./Vragenlijst";
 import React from "react";
 import Questionnaire from "./Vragenlijst_aanmaken";
+import LoginForm from "./LogIn";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Route index element={<Main />} />
                     <Route path="vragenlijst" element={<Vragenlijst />} />
                     <Route path="vragenlijst_aanmaken" element={<Questionnaire />} />
+                    <Route path="login" element={<LoginForm />} />
                 </Route>
             </Routes>
 

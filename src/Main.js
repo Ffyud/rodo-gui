@@ -10,6 +10,8 @@ function Main() {
                 <div>Dit is de landingspagina.
                     <br/><br/> Kijk, een route: <br/><br/></div>
                 <div>
+                    <Link to={"LogIn"}>Open LoginForm</Link>
+                    <br/><br/>
                     <Link to={"vragenlijst"}>Open vragenlijst</Link>
                     <br/><br/>
                     <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
