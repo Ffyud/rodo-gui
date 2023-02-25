@@ -4,13 +4,15 @@ function Main() {
     return (
         <div className="wrapper">
             <header>
-                <h1>🔥 Main 🔥</h1>
+                <h1>Welkom bij RoDO</h1>
             </header>
             <main>
-                <div>Dit is de landingspagina.
-                    <br/><br/> Kijk, een route: <br/><br/></div>
+                <div className="explainer-text">Log in als speler of als team</div>
                 <div>
-                    <Link to={"vragenlijst"}>Open vragenlijst</Link>
+                    <input type="text" placeholder="Logincode van het team..." />
+                    <input type="text" placeholder="Logincode van jou als speler..." />
+
+                    <Link to={"vragenlijst"}>voorbeeld vragenlijst</Link>
                     <br/><br/>
                     <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
                 </div>

@@ -1,8 +1,8 @@
 function VragenlijstVraag(props) {
 
     return (
-        <div className="vragenlijstVraag">
-            <span className="vraag">{props.vraag}</span>
+        <div className="vraag-wrapper">
+            <span className="vraag-text">{props.vraag}</span>
             <input type="text" placeholder="Tik je antwoord..."></input>
         </div>
     );

@@ -1,35 +1,58 @@
+:root {
+  --main-color: #FF9F1C;
+  --secondary-color: #E71D36;
+  --dark: #011627;
+  --bright: #FDFFFC;
+}
+
 .App {
   text-align: center;
+  background: var(--bright);
 }
 
 .wrapper {
   max-width: 800px;
   margin: 0px auto;
-}
+  color: var(--secondary-color);
 
-header {
-  color: #000;
 }
-
+header { overflow-x: hidden;}
 header h1 {
   margin: 0px;
+  font-size: 3.5em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.vragenlijstVraag {
+main .explainer-text {
   padding: 15px;
-  margin: 15px;
-  background: green;
-  color: #FFF;
-  border-radius: 8px;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: var(--dark);
 }
 
-.vragenlijstVraag span.vraag {
-  display: block;
-  padding: 5px 0px 5px 0px;
-} 
-.vragenlijstVraag input {
-  border: none;
-  outline: none;
+main input {
   border-radius: 8px;
-  padding: 10px;
+  border: none;
+  padding: 15px;
+  margin: 0px 15px 15px 15px;
+  width: calc(100% - 60px);
+  color: var(--dark);
+  font-size: 1em;
+  font-weight: 800;
+  background: #E0E0E0;
+  box-shadow: 0px 2px 0px 1px var(--dark);
+}
+
+.vraag-wrapper {
+  padding: 30px 0px 15px 0px;
+  box-shadow: 0px 2px 0px 0px var(--dark);
+}
+
+.vraag-wrapper .vraag-text {
+  padding: 0px 15px 15px 15px;
+  font-size: 1.5em;
+  font-weight: 800;
+  display: inline-block;
+  color: var(--dark);
 }
