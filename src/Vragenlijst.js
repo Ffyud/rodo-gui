@@ -1,4 +1,5 @@
 import VragenlijstVraag from "./VragenlijstVraag";
+import getQuestionList from "./services/questionlist";
 
 function Vragenlijst() {
     return (
