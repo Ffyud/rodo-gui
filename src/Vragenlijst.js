@@ -1,5 +1,6 @@
 import VragenlijstVraag from "./VragenlijstVraag";
 import getQuestionList from "./services/questionlist";
+import { Link } from "react-router-dom";
 
 function Vragenlijst() {
     return (
@@ -12,6 +13,8 @@ function Vragenlijst() {
                 <VragenlijstVraag vraag="Wie ben jij?"></VragenlijstVraag>
                 <VragenlijstVraag vraag="Hoeveel bier heb je op?"></VragenlijstVraag>
                 <VragenlijstVraag vraag="Gaat neet?"></VragenlijstVraag>
+                <Link to={"/"}><button className="primary-btn">Opslaan en verder</button></Link>
+
             </main>
         </div>
     );
