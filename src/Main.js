@@ -7,16 +7,16 @@ function Main() {
                 <h1>Welkom bij RoDO</h1>
             </header>
             <main>
-                <div className="explainer-text">Log in als speler of als team</div>
+                <div className="explainer-text">Via deze website kan je opdrachten inzien en vragen invullen. Om verder te gaan kan je inloggen met je gekregen inlogcode.</div>
                 <div>
                     <input type="text" placeholder="Logincode van het team..." />
-                    <input type="text" placeholder="Logincode van jou als speler..." />
+                    <Link to={"vragenlijst"}><button className="primary-btn" value="Login">Login</button></Link>
 
-                    <Link to={"vragenlijst"}>voorbeeld vragenlijst</Link>
-                    <br/><br/>
-                    <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
+
                 </div>
             </main>
+
+                    <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
         </div>
     );
 }
