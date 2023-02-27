@@ -9,7 +9,7 @@ function Main() {
             <main>
                 <div className="explainer-text">Via deze website kan je opdrachten inzien en vragen invullen. Om verder te gaan kan je inloggen met je gekregen inlogcode.</div>
                 <div>
-                    <input type="text" placeholder="Logincode van het team..." />
+                    <input type="text" placeholder="Logincode..." />
                     <Link to={"vragenlijst"}><button className="primary-btn" value="Login">Login</button></Link>
 
 

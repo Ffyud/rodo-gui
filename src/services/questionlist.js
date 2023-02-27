@@ -1,6 +1,6 @@
-import axios from 'axios';
-
+// import axios from 'axios';
 // TODO Tijdens ontwikkeling mocken maar uiteindelijk API bevragen m.b.v. Axios
+
 // TODO deze "services" constructie proberen (https://medium.com/nerd-for-tech/react-js-services-854be54a6ba1)
 
 const getQuestionList = (questionlistId) => {

@@ -11,8 +11,9 @@ function Vragenlijst() {
             <main>
                 <div className="explainer-text">Vul onderstaande vragen in.</div>
                 <VragenlijstVraag vraag="Wie ben jij?"></VragenlijstVraag>
+                <VragenlijstVraag vraag="Wie is de mol?"></VragenlijstVraag>
                 <VragenlijstVraag vraag="Hoeveel bier heb je op?"></VragenlijstVraag>
-                <VragenlijstVraag vraag="Gaat neet?"></VragenlijstVraag>
+                <VragenlijstVraag vraag="Hoeveel derpie derp heb je verzameld?"></VragenlijstVraag>
                 <Link to={"/"}><button className="primary-btn">Opslaan en verder</button></Link>
 
             </main>
