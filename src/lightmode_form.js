@@ -1,5 +1,4 @@
 import React from 'react';
-import "./mode_form.css";
 const LightModeForm = (props) => {
   return (
     <form onSubmit={props.handleAddQuestion}>
