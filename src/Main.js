@@ -9,22 +9,14 @@ function Main() {
             <main>
                 <div className="explainer-text">Via deze website kan je opdrachten inzien en vragen invullen. Om verder te gaan kan je inloggen met je gekregen inlogcode.</div>
                 <div>
-<<<<<<< HEAD
-                    <Link to={"LogIn"}>Open LoginForm</Link>
+                    <Link to={"LogIn"}><button className="primary-btn">Open LoginForm</button></Link>
                     <br/><br/>
                     <Link to={"vragenlijst"}>Open vragenlijst</Link>
                     <br/><br/>
                     <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
-=======
-                    <input type="text" placeholder="Logincode..." />
-                    <Link to={"vragenlijst"}><button className="primary-btn" value="Login">Login</button></Link>
-
-
->>>>>>> 17e0c95493c5bd416619091f107e65db9b4979e0
                 </div>
             </main>
-
-                    <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
+            <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
         </div>
     );
 }
