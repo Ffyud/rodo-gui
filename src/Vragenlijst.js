@@ -1,5 +1,5 @@
 import VragenlijstVraag from "./VragenlijstVraag";
-import getQuestionList from "./services/questionlist";
+// import getQuestionList from "./services/questionlist";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -7,7 +7,7 @@ function Vragenlijst() {
     return (
         <div className="wrapper">
             <header>
-                <h1>Rodo vragen</h1>
+                <h1>Rodo vragen Ronde 1</h1>
             </header>
             <main>
                 <div className="explainer-text">Vul onderstaande vragen in.</div>
