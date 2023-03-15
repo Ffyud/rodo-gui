@@ -1,0 +1,21 @@
+
+  
+  .test{
+    display: block;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+  }
+  
+  .form-check {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    justify-content: center;
+  }
+  
+
+  
+  
+  

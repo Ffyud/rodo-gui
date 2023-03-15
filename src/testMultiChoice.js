@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './testMultiChoice.css';
 
 function Question() {
   const [questions, setQuestions] = useState([]);
@@ -24,6 +25,11 @@ function Question() {
           question: 'Met wie vormde de mol een tweetal?',
           choices: ['Eduardo', 'Olav', 'Hakim', 'Repelsteeltje'],
           answer: 'Hakim'
+        },
+        {
+          question: 'Hoeveel geld verdiende de Mol deze opdracht?',
+          choices: ['100', '1000', '50', '200'],
+          answer: '200'
         }
       ];
       setQuestions(localQuestions);
@@ -60,26 +66,32 @@ function Question() {
 
   const currentQuestion = questions[currentQuestionIndex];
 
+
+  //hoe deze shit allignen? links alligned maar dan in het midden gepositioneer, lukt niet in in css :(
   return (
     <div>
       {questions.length > 0 ? (
         <>
           <h2>{currentQuestion.question}</h2>
           <form onSubmit={handleSubmit}>
-            {currentQuestion.choices.map((choice, index) => (
-              <div key={index}>
-                <label>
+          {currentQuestion.choices.map((choice, index) => (
+            <div key={index} className="test">
+              
+                <label className="form-check">
                   <input
                     type="radio"
                     name="choice"
                     value={choice}
                     checked={selectedChoice === choice}
                     onChange={(event) => setSelectedChoice(event.target.value)}
+
                   />
-                  {choice}
+                  
+                  <span className="form-check-label">{choice}</span>
                 </label>
-              </div>
-            ))}
+
+            </div>
+          ))}
             <button type="submit">Submit</button>
           </form>
         </>
