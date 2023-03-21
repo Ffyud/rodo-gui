@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './testMultiChoice.css';
 
-function Question() {
+function MultiQuestion() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedChoice, setSelectedChoice] = useState('');
@@ -73,25 +73,22 @@ function Question() {
       {questions.length > 0 ? (
         <>
           <h2>{currentQuestion.question}</h2>
+          <hr />
           <form onSubmit={handleSubmit}>
-          {currentQuestion.choices.map((choice, index) => (
-            <div key={index} className="test">
-              
-                <label className="form-check">
+            <label className="question-container wrap-test">
+              {currentQuestion.choices.map((choice, index) => (
+                <label key={index} className="radio-label">
                   <input
                     type="radio"
                     name="choice"
                     value={choice}
                     checked={selectedChoice === choice}
                     onChange={(event) => setSelectedChoice(event.target.value)}
-
                   />
-                  
-                  <span className="form-check-label">{choice}</span>
+                  <span>{choice}</span>
                 </label>
-
-            </div>
-          ))}
+              ))}
+            </label>
             <button type="submit">Submit</button>
           </form>
         </>
@@ -105,4 +102,4 @@ function Question() {
   );
 }
 
-export default Question;
+export default MultiQuestion;

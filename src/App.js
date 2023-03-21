@@ -6,7 +6,7 @@ import Quiz from "./Deelnemer_VraagFrameWork";
 import React from "react";
 import Questionnaire from "./Vragenlijst_aanmaken";
 import LoginForm from "./LogIn";
-import Question from "./testMultiChoice";
+import MultiQuestion from "./testMultiChoice";
 
 function App() {
     return (
@@ -18,7 +18,7 @@ function App() {
                     <Route path="vragenlijst_aanmaken" element={<Questionnaire />} />
                     <Route path="login" element={<LoginForm />} />
                     <Route path="Deelnemer_VraagFrameWork" element={<Quiz />} />
-                    <Route path="testMultiChoice" element={<Question />} />
+                    <Route path="testMultiChoice" element={<div className="question-container"><MultiQuestion /></div>} />
                 </Route>
             </Routes>
 

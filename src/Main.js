@@ -18,7 +18,7 @@ function Main() {
                     <br/><br/>
                     <Link to={"Deelnemer_VraagFrameWork"}>Open Quiz</Link>
                     <br/><br/>
-                    <Link to={"testMultiChoice"}>Open Question</Link>
+                    <Link to={"testMultiChoice"}>Open MultipleChoice</Link>
                 </div>
             </main>
             <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
