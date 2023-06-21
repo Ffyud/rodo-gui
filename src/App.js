@@ -12,9 +12,9 @@ function App() {
             <Routes>
                 <Route path="/">
                     <Route index element={<Main />} />
-                    <Route path="vragenlijst" element={<Vragenlijst />} />
-                    <Route path="vragenlijst_aanmaken" element={<Questionnaire />} />
-                    <Route path="login" element={<LoginForm />} />
+                    <Route path="/vragenlijst" element={<Vragenlijst vragenlijstId="1" />} />
+                    <Route path="/vragenlijst_aanmaken" element={<Questionnaire />} />
+                    <Route path="/login" element={<LoginForm />} />
                 </Route>
             </Routes>
 
