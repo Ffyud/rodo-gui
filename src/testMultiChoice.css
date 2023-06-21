@@ -1,0 +1,100 @@
+hr {
+  height: 2px;
+  border: none;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+ 
+/*
+label.wrap-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label.radio-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: left;
+}
+*/
+
+.question-container > label.wrap-test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  position: absolute; /* set position to relative */
+
+}
+
+.question-container > label.radio-label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  /*position: absolute;  set position to absolute */
+  position: relative;
+  left: 45%; /* align to center */
+  transform: translateX(0%); /* move back by half of label width */
+  width: max-content; /* set width to the width of the label text */
+  line-height: 20px; 
+  /*margin-left: 10px;  add some additional margin */
+}
+
+.question-container > label.radio-label > input[type="radio"] {
+  /* set the width and height of the radio button */
+  width: 15px;
+  height: 15px;
+  /* add some margin around the radio button */
+  margin-right: 15px;
+}
+
+/*
+label.wrap-test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label.radio-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+label.radio-label input[type="radio"] {
+  display: none;
+}
+
+label.radio-label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+label.radio-label input[type="radio"]:checked + ::before {
+  background-color: #007bff;
+}
+
+label.radio-label span {
+  font-size: 16px;
+  line-height: 1.5;
+}
+*/
+  
+
+  

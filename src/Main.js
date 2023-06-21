@@ -15,6 +15,10 @@ function Main() {
                     <Link to={"vragenlijst"}>Open vragenlijst</Link>
                     <br/><br/>
                     <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
+                    <br/><br/>
+                    <Link to={"Deelnemer_VraagFrameWork"}>Open Quiz</Link>
+                    <br/><br/>
+                    <Link to={"testMultiChoice"}>Open MultipleChoice</Link>
                 </div>
             </main>
             <Link to={"vragenlijst_aanmaken"}>Open Questionnaire</Link>
