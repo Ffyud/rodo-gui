@@ -3,11 +3,16 @@ import getQuestionList from "./services/questionlist";
 import { Link } from "react-router-dom";
 import React from "react";
 
-function Vragenlijst() {
+function Vragenlijst(props) {
+
+    let vragenlijstId = props.vragenlijstId
+
+    let vragenlijst = getQuestionList
+
     return (
         <div className="wrapper">
             <header>
-                <h1>Rodo vragen</h1>
+                <h1>{vragenlijst['name']}</h1>
             </header>
             <main>
                 <div className="explainer-text">Vul onderstaande vragen in.</div>
